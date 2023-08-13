@@ -1,0 +1,4 @@
+N 2
+T SRL-PSA
+D gamma
+S non-stationary

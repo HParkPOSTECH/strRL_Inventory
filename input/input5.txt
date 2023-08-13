@@ -1,0 +1,4 @@
+N 2
+T SRL-FSA
+D gamma
+S stationary

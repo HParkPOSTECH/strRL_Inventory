@@ -1,0 +1,34 @@
+### Code for paper "Adaptive Inventory Replenishment using Structured Reinforcement Learning by Exploiting a Policy Structure"
+
+- The code needs four input as below:
+  - N: # of items
+      - the current version of code allow item size lower than <= 4
+      - over the item 4, algorithm is defined as relaxed version (see appendix S), which just checks computational times in the paper
+  - T: type of algorithm
+      - SRL-FSA: Structured RL with full stochastic approximation (see section 4.2)
+      - SRL-FSA: Structured RL with partial stochastic approximation (see section 4.3)
+  - D: demonstrative demand distribution
+    - gamma: gamma demand distribution Gamma(2, 1)
+    - normal: truncated normal demand distribution N(3, 1; d >= 0)
+    - poisson: poisson demand distribution Poisson(2)
+  - S: stationarity of demand
+    - stationary: stationary demand system
+    - non-stationary: non-stationary demand switching scenario 
+
+- We establish input formats corresponding to the numerical studies in our paper (in directory "./input")
+  - input1.txt: experiment of SRL-FSA for single-item under stationary & Gamma demand distribution
+  - input2.txt: experiment of SRL-PSA for single-item under stationary & Gamma demand distribution
+  - input3.txt: experiment of SRL-FSA for single-item under non-stationary & Gamma demand distribution
+  - input4.txt: experiment of SRL-PSA for single-item under non-stationary & Gamma demand distribution
+  - input5.txt: experiment of SRL-FSA for two-item under stationary & Gamma demand distribution
+  - input6.txt: experiment of SRL-PSA for two-item under stationary & Gamma demand distribution
+  - input7.txt: experiment of SRL-FSA for two-item under non-stationary & Gamma demand distribution
+  - input8.txt: experiment of SRL-PSA for two-item under non-stationary & Gamma demand distribution
+  - input9.txt: experiment of SRL-FSA for single-item under stationary & truncated Normal demand distribution
+  - input10.txt: experiment of SRL-PSA for single-item under stationary & truncated Normal demand distribution
+  - input9.txt: experiment of SRL-FSA for single-item under stationary & Poisson demand distribution
+  - input10.txt: experiment of SRL-PSA for single-item under stationary & Poisson demand distribution
+  - input11.txt: experiment of SRL-FSA for three-item under stationary & Gamma demand distribution
+  - input12.txt: experiment of SRL-PSA for three-item under stationary & Gamma demand distribution
+  - input13.txt: experiment of SRL-FSA for four-item under stationary & Gamma demand distribution
+  - input14.txt: experiment of SRL-PSA for four-item under stationary & Gamma demand distribution

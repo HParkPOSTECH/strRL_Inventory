@@ -1,0 +1,4 @@
+N 4
+T SRL-PSA
+D gamma
+S stationary

@@ -1,0 +1,4 @@
+N 1
+T SRL-PSA
+D poisson
+S stationary
